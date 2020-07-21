@@ -27,6 +27,7 @@ button1.onclick=function()
    else if(city == "-" && input.value.length == 0 )
    {
     alert("Zadejte město!");
+    return;
    }
    else
    {
@@ -88,7 +89,7 @@ function fill(response, inputTime)
   var date = response.list[0].dt_txt;
   var i;
   var space=1;
-  for (i = 0; i < response.list.length; ++i)
+  for (i = 0; i < response.list.length; i++)
    {
       date=response.list[i].dt_txt
       if(date.substr(11, 8) == inputTime)
