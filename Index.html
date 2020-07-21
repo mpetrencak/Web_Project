@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <link rel="stylesheet" href="css/main.css">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+        <!--Nav bar-->      
+        <!--Home--> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+
+          <!--Last searched--> 
+          <div class="lastSearched">Poslední města:
+            <p id="text" class="last0"></p>
+            <p id="text" class="last1"></p>
+            <p id="text" class="last2"></p>
+            <p id="text" class="last3"></p>
+        </div>
+
+          <br><!--New Line-->
+          <br><!--New Line-->
+
+          <!--Jumbotron input-->
+          <div class="jumbotron" style="background-color:#222222;">
+              <div class="container">
+                
+                  <h1>Předpověď počasí</h1>
+                  <div class="row">
+                          <div class="col-sm-5">
+                              <div class="form-group">
+                                <label for="FormWriteTown">Napiště město</label>  <!--First input-->
+                                <input class="form-control" type="text" placeholder="Napište město..." id="FormWriteTown">
+                              </div>
+                          </div>
+                          <div class="col-sm-5">
+                              <div class="form-group">
+                                  <label for="FormControlSelectTown">Vyberte město</label>  <!--Second input-->
+                                  <select class="form-control" id="FormControlSelectTown" style="background-color: lightgray;">
+                                    <option>-</option>
+                                    <option>Zlín</option>
+                                    <option>Brno</option>
+                                    <option>Prague</option>
+                                    <option>Bratislava</option>
+                                    <option>Vienna</option>
+                                    <option>London</option>
+                                    <option>Moscow</option>
+                                    <option>Paris</option> 
+                                    <option>Rome</option>                                    
+                                    <option>Tokio</option>
+                                    </select>
+                              </div>
+                          </div>
+                  </div>                
+              </div> 
+              
+              <!--Time input-->
+              <div class="container">    
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <form>
+                        Vyberte čas
+                        <select id="mySelect" style="background-color: lightgray;">
+                          <option>00:00:00</option>
+                          <option>03:00:00</option>
+                          <option>06:00:00</option>
+                          <option>09:00:00</option>
+                          <option>12:00:00</option>
+                          <option>15:00:00</option>
+                          <option>18:00:00</option>
+                          <option>21:00:00</option>
+                        </select>
+                        <br><br>
+                      </form>
+
+                    </div>
+                    
+                     <!--Find button-->
+                  </div>
+                    <div class="row"> 
+                      <div class="col-sm-5">
+                        <p><a href="#" class="btn btn-warning btn-lg" role="button">Hledej </a></p>
+
+                      </div>
+
+                       
+                    </div>
+              </div>
+            </div>                
+            <div class="container">
+                <p id="choosenCity">Předpověď pro ...</p>
+            </div>   
+                
+            <!--Weather place-->
+              <div class="container">
+                <div class="row">  
+                  <div class="col-sm-2"  style="background-color:rgb(221, 147, 50);">
+                    <p id="other1"></p>
+                    <p id="icons1"></p>
+                  </div>  
+                    
+                  <div class="col-sm-2" style="background-color:rgb(161, 197, 1);">  
+                    <p id="other2"></p>
+                    <p id="icons2"></p>
+                  </div>
+                    
+                  <div class="col-sm-2" style="background-color:rgb(221, 147, 50);">  
+                    <p id="other3"></p>
+                    <p id="icons3"></p>
+                  </div>
+                    
+                  <div class="col-sm-2" style="background-color:rgb(161, 197, 1);">
+                    <p id="other4"></p>
+                    <p id="icons4"></p>
+                  </div>  
+                    
+                  <div class="col-sm-2" style="background-color:rgb(221, 147, 50);">  
+                    <p id="other5"></p>
+                    <p id="icons5"></p>
+                  </div>
+                </div>
+              </div>
+
+        <script src="" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+.mydiv {
+    margin: 1em;
+    background-color: lightgrey;
+
+}
+
+.mycol { 
+    background-color: #aaaaaa;
+    border: solid 1px black;
+} 
+
+body {
+    background-color:#222222 !important;
+    color:whitesmoke !important;
+}
+
+/*
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color :darkmagenta !important;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+    color: white !important;
+}
+*/
+
+.dropdown-item:active,.dropdown-item:hover{
+    background-color: darkmagenta !important;
+}
+
+.dropdown-item{
+    color: whitesmoke!important;
+}
+
+
+
+.fa {
+	color: whitesmoke;
+}
+
+.fas {
+    color: whitesmoke;
+}
+
+
+.myBorderGray {
+    border: 3px solid lightgray;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+.myBorderForm {
+    border: 3px solid #2e2e2e;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+.myBorderTable {
+    border: 3px solid orange;
+    background-color:orange;
+    padding: 10px;
+    border-radius: 1px;
+  }
+
+.myBorderPoznamky {
+    border: 3px solid orange;
+    background-color:orange;
+    padding: 10px;
+    border-radius: 25px;
+  }
+.myBorderOnlyLinePoznamky {
+    border: 3px solid orange !important;
+    padding: 10px!important;
+    border-radius: 25px!important;
+}
+
+
+
+
+
+input[type="text"], textarea {
+
+    background-color : lightgray; 
+  
+}
+
+input[type="date"], textarea {
+
+    background-color : lightgray; 
+  
+}
+
+/*
+.table{
+    border: 4px solid greenyellow;
+}
+*/
+
+  
